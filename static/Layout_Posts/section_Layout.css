@@ -1,0 +1,12 @@
+.section {
+  background-color: #fafafa;
+  padding-top: 150px;
+  padding-bottom: 50px;
+  z-index: 0;
+}
+
+.card-img-top {
+  width: 598px;
+  height: 450px;
+  object-fit: cover;
+}
