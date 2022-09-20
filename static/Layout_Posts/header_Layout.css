@@ -1,0 +1,26 @@
+.header {
+  height: 100px;
+  background-color: #f5d042;
+  color: #0a174e;
+  padding-top: 20px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.header_Logo {
+  margin-bottom: 15px;
+  margin-left: 500px;
+}
+
+#header_LogoText {
+  font-family: "cr";
+  font-size: 25px;
+}
+
+.header_Logout {
+  margin-left: 400px;
+  margin-bottom: 15px;
+}

@@ -1,0 +1,17 @@
+.header_Logout {
+  background-color: white;
+  border-color: white;
+  color: black;
+
+  width: 80px;
+  height: 28px;
+}
+
+.header_Logout:hover {
+  background-color: #08a88a;
+  border-color: #08a88a;
+  box-shadow: 1px 1px 1px #08a88a;
+  color: white;
+  width: 80px;
+  height: 28px;
+}
