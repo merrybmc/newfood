@@ -1,5 +1,4 @@
-function Logout() {
+function sign_Out() {
   $.removeCookie("mytoken", { path: "/" });
-  alert("로그아웃!");
   window.location.href = "/login";
 }
