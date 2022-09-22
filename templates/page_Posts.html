@@ -17,7 +17,7 @@
         crossorigin="anonymous"></script>
     <!-- ajax -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
 
 
 
@@ -38,6 +38,14 @@
             src: url("../static/fonts/cr.otf");
         }
     </style>
+
+    <script>
+        function sign_Out() {
+            $.removeCookie("mytoken", { path: "/" });
+            window.location.href = "/login";
+        }
+
+    </script>
 </head>
 
 <body>
@@ -56,7 +64,7 @@
             <p id="header_LogoText"> &nbsp&nbsp 금주의 신상</p>
 
             <!-- 로그아웃 btn -->
-            <button class="header_Logout">로그아웃</button>
+            <button class="header_Logout" onclick="sign_Out()">로그아웃</button>
 
         </header>
 
@@ -400,5 +408,6 @@
 <script src="../static/Js_Posts/text_Src_crawling.js"></script>
 <script src="../static/Js_Posts/header_logo.js"></script>
 <script src="../static/js_Posts/like_dislike_check.js"></script>
+<script src="../static/js_Posts/Logout.js"></script>
 
 </html>
