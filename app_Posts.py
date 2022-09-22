@@ -1,6 +1,13 @@
+from pymongo import MongoClient
+import jwt
+import datetime
+import hashlib
 import requests
+from flask import Flask, render_template, jsonify, request, redirect, url_for
+from werkzeug.utils import secure_filename
+from datetime import datetime, timedelta
+
 from bs4 import BeautifulSoup
-from flask import Flask, render_template, request, jsonify
 app = Flask(__name__)
 
 headers = {'User-Agent' : 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36'}
@@ -29,9 +36,9 @@ six_imgsrc = soup.find('div','six').find('img')['src']
 seven_p = soup.select_one('body > div.seven > p').string
 seven_imgsrc = soup.find('div','seven').find('img')['src']
 
-@app.route('/')
-def toy_project():
-    return render_template('page_Posts.html') 
+# @app.route('/')
+# def toy_project():
+#     return render_template('page_Posts.html') 
 
 @app.route('/order', methods=['GET'])
 def view_orders():
