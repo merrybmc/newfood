@@ -16,7 +16,140 @@ SECRET_KEY = 'SPARTA'
 
 client = MongoClient(
     "mongodb+srv://h99:sparta@cluster2.cyd5okd.mongodb.net/?retryWrites=true&w=majority")
-db = client.test
+db = client.db
+
+
+@app.route("/comment_list1", methods=["GET"])
+def bucket_get1():
+    info_list = list(db.comment_list1.find({}, {'_id': False}))
+    return jsonify({'info': info_list})
+
+
+@app.route("/comment_list2", methods=["GET"])
+def bucket_get2():
+    info_list = list(db.comment_list2.find({}, {'_id': False}))
+    return jsonify({'info': info_list})
+
+
+@app.route("/comment_list3", methods=["GET"])
+def bucket_get3():
+    info_list = list(db.comment_list3.find({}, {'_id': False}))
+    return jsonify({'info': info_list})
+
+
+@app.route("/comment_list4", methods=["GET"])
+def bucket_get4():
+    info_list = list(db.comment_list4.find({}, {'_id': False}))
+    return jsonify({'info': info_list})
+
+
+@app.route("/comment_list5", methods=["GET"])
+def bucket_get5():
+    info_list = list(db.comment_list5.find({}, {'_id': False}))
+    return jsonify({'info': info_list})
+
+
+@app.route("/comment_list6", methods=["GET"])
+def bucket_get6():
+    info_list = list(db.comment_list6.find({}, {'_id': False}))
+    return jsonify({'info': info_list})
+
+
+@app.route("/comment_list7", methods=["GET"])
+def bucket_get7():
+    info_list = list(db.comment_list7.find({}, {'_id': False}))
+    return jsonify({'info': info_list})
+
+
+@app.route("/comment_list1", methods=["POST"])
+def bucket_post1():
+    comment_receive = request.form['comment_give']
+    comment_list = list(db.comment_list1.find({}, {'_id': False}))
+    count = len(comment_list) + 1
+    doc = {
+        'num': count,
+        'comment': comment_receive,
+    }
+    db.comment_list1.insert_one(doc)
+    return jsonify({'msg': '등록 완료!'})
+
+
+@app.route("/comment_list2", methods=["POST"])
+def bucket_post2():
+    comment_receive = request.form['comment_give']
+    comment_list = list(db.comment_list2.find({}, {'_id': False}))
+    count = len(comment_list) + 1
+    doc = {
+        'num': count,
+        'comment': comment_receive,
+    }
+    db.comment_list2.insert_one(doc)
+    return jsonify({'msg': '등록 완료!'})
+
+
+@app.route("/comment_list3", methods=["POST"])
+def bucket_post3():
+    comment_receive = request.form['comment_give']
+    comment_list = list(db.comment_list3.find({}, {'_id': False}))
+    count = len(comment_list) + 1
+    doc = {
+        'num': count,
+        'comment': comment_receive,
+    }
+    db.comment_list3.insert_one(doc)
+    return jsonify({'msg': '등록 완료!'})
+
+
+@app.route("/comment_list4", methods=["POST"])
+def bucket_post4():
+    comment_receive = request.form['comment_give']
+    comment_list = list(db.comment_list4.find({}, {'_id': False}))
+    count = len(comment_list) + 1
+    doc = {
+        'num': count,
+        'comment': comment_receive,
+    }
+    db.comment_list4.insert_one(doc)
+    return jsonify({'msg': '등록 완료!'})
+
+
+@app.route("/comment_list5", methods=["POST"])
+def bucket_post5():
+    comment_receive = request.form['comment_give']
+    comment_list = list(db.comment_list5.find({}, {'_id': False}))
+    count = len(comment_list) + 1
+    doc = {
+        'num': count,
+        'comment': comment_receive,
+    }
+    db.comment_list5.insert_one(doc)
+    return jsonify({'msg': '등록 완료!'})
+
+
+@app.route("/comment_list6", methods=["POST"])
+def bucket_post6():
+    comment_receive = request.form['comment_give']
+    comment_list = list(db.comment_list6.find({}, {'_id': False}))
+    count = len(comment_list) + 1
+    doc = {
+        'num': count,
+        'comment': comment_receive,
+    }
+    db.comment_list6.insert_one(doc)
+    return jsonify({'msg': '등록 완료!'})
+
+
+@app.route("/comment_list7", methods=["POST"])
+def bucket_post7():
+    comment_receive = request.form['comment_give']
+    comment_list = list(db.comment_list7.find({}, {'_id': False}))
+    count = len(comment_list) + 1
+    doc = {
+        'num': count,
+        'comment': comment_receive,
+    }
+    db.comment_list7.insert_one(doc)
+    return jsonify({'msg': '등록 완료!'})
 
 
 @app.route('/')
