@@ -13,6 +13,7 @@
 .header_Logo {
   margin-bottom: 15px;
   margin-left: 500px;
+  cursor: pointer;
 }
 
 #header_LogoText {
@@ -23,4 +24,8 @@
 .header_Logout {
   margin-left: 400px;
   margin-bottom: 15px;
+}
+
+#header_LogoText {
+  cursor: default;
 }
