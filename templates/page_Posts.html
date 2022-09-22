@@ -48,9 +48,9 @@
         <header class="header">
             {{d1}}
             <!-- 로고 이미지 -->
-            <img class="header_Logo"
+            <img class="header_Logo" id="click_Logo"
                 src="https://blogpfthumb-phinf.pstatic.net/MjAyMTA3MTZfMjM1/MDAxNjI2NDM5OTI4OTY1.2x609TV3FY7cLyh_Qh_AzL2_-pKwlVMn7xWlF3zq5H8g.pZwJumYC8UH4LRdqYKmVo0CzhmVzXKRHXKs6UYZw8Hkg.PNG.choibongae/pepe-licks-lips.png?type=w161"
-                width="65px" height="65px">
+                width="70px" height="70px">
 
             <!-- 로고 제목 -->
             <p id="header_LogoText"> &nbsp&nbsp 금주의 신상</p>
@@ -80,14 +80,18 @@
                         <span class="one_src"></span>
                         <!-- like/dislike -->
                         <div class="card-body">
-                            <button class="card_btn_heart">
-                                <p><span onmouseover="this.innerText='❤️ 좋아요 + 1 &nbsp'"
-                                        onmouseout="this.innerText='🤍 좋아요 + 1 &nbsp'">🤍
-                                        좋아요 + 1 &nbsp</span>
-                                    <span onmouseover="this.innerText='💔 별로에요 + 2'"
-                                        onmouseout="this.innerText='🤍 별로에요 + 2'">🤍 별로에요 + 2</span>
-                                </p>
-                            </button>
+                            <div class="card_btn_heart">
+                                <button class="like like1" onclick="like1_check()">
+                                    <span class="like1_text">
+                                        ❤️&nbsp좋아요 + 1 &nbsp
+                                    </span>
+                                </button>
+                                <button class="dislike dislike1" onclick="dislike1_check()">
+                                    <span class="dislike1_text">
+                                        🤍&nbsp별로에요 - 1 &nbsp
+                                    </span>
+                                </button>
+                            </div>
 
                             <!-- 댓글 내역 -->
                             <ul class="comment_List1">
@@ -100,10 +104,10 @@
                         <!-- 댓글 입력 -->
                         <div class="input-group">
                             <div class="input-group mb-3">
-                                <span class="input-group-text" id="basic-addon1">ID</span>
+                                <span class="input-group-text input_id" id="basic-addon1">ID</span>
                                 <input type="text" class="form-control comment_Input1" placeholder="댓글 달기..."
                                     aria-label="Username" aria-describedby="basic-addon1">
-                                <button class="btn btn-outline-secondary comment_Add1" type="button"
+                                <button class="comment_btn comment_Add1" type="button"
                                     id="inputGroupFileAddon04">게시</button>
                             </div>
                         </div>
@@ -121,14 +125,18 @@
 
                         <!-- like/dislike -->
                         <div class="card-body">
-                            <button class="card_btn_heart">
-                                <p><span onmouseover="this.innerText='❤️ 좋아요 + 1 &nbsp'"
-                                        onmouseout="this.innerText='🤍 좋아요 + 1 &nbsp'">🤍
-                                        좋아요 + 1 &nbsp</span>
-                                    <span onmouseover="this.innerText='💔 별로에요 + 2'"
-                                        onmouseout="this.innerText='🤍 별로에요 + 2'">🤍 별로에요 + 2</span>
-                                </p>
-                            </button>
+                            <div class="card_btn_heart">
+                                <button class="like like2" onclick="like2_check()">
+                                    <span class="like2_text">
+                                        ❤️&nbsp좋아요 + 1 &nbsp
+                                    </span>
+                                </button>
+                                <button class="dislike dislike2" onclick="dislike2_check()">
+                                    <span class="dislike2_text">
+                                        🤍&nbsp별로에요 - 1 &nbsp
+                                    </span>
+                                </button>
+                            </div>
 
                             <!-- 댓글 내역 -->
                             <ul class="comment_List2">
@@ -141,10 +149,10 @@
                         <!-- 댓글 입력 -->
                         <div class="input-group">
                             <div class="input-group mb-3">
-                                <span class="input-group-text" id="basic-addon1">ID</span>
+                                <span class="input-group-text input_id" id="basic-addon1">ID</span>
                                 <input type="text" class="form-control comment_Input2" placeholder="댓글 달기..."
                                     aria-label="Username" aria-describedby="basic-addon1">
-                                <button class="btn btn-outline-secondary comment_Add2" type="button"
+                                <button class="comment_btn comment_Add2" type="button"
                                     id="inputGroupFileAddon04">게시</button>
                             </div>
                         </div>
@@ -162,14 +170,18 @@
 
                         <!-- like/dislike -->
                         <div class="card-body">
-                            <button class="card_btn_heart">
-                                <p><span onmouseover="this.innerText='❤️ 좋아요 + 1 &nbsp'"
-                                        onmouseout="this.innerText='🤍 좋아요 + 1 &nbsp'">🤍
-                                        좋아요 + 1 &nbsp</span>
-                                    <span onmouseover="this.innerText='💔 별로에요 + 2'"
-                                        onmouseout="this.innerText='🤍 별로에요 + 2'">🤍 별로에요 + 2</span>
-                                </p>
-                            </button>
+                            <div class="card_btn_heart">
+                                <button class="like like3" onclick="like3_check()">
+                                    <span class="like3_text">
+                                        ❤️&nbsp좋아요 + 1 &nbsp
+                                    </span>
+                                </button>
+                                <button class="dislike dislike3" onclick="dislike3_check()">
+                                    <span class="dislike3_text">
+                                        🤍&nbsp별로에요 - 1 &nbsp
+                                    </span>
+                                </button>
+                            </div>
 
                             <!-- 댓글 내역 -->
                             <ul class="comment_List3">
@@ -182,10 +194,10 @@
                         <!-- 댓글 입력 -->
                         <div class="input-group">
                             <div class="input-group mb-3">
-                                <span class="input-group-text" id="basic-addon1">ID</span>
+                                <span class="input-group-text input_id" id="basic-addon1">ID</span>
                                 <input type="text" class="form-control comment_Input3" placeholder="댓글 달기..."
                                     aria-label="Username" aria-describedby="basic-addon1">
-                                <button class="btn btn-outline-secondary comment_Add3" type="button"
+                                <button class="comment_btn comment_Add3" type="button"
                                     id="inputGroupFileAddon04">게시</button>
                             </div>
                         </div>
@@ -202,14 +214,18 @@
 
                         <!-- like/dislike -->
                         <div class="card-body">
-                            <button class="card_btn_heart">
-                                <p><span onmouseover="this.innerText='❤️ 좋아요 + 1 &nbsp'"
-                                        onmouseout="this.innerText='🤍 좋아요 + 1 &nbsp'">🤍
-                                        좋아요 + 1 &nbsp</span>
-                                    <span onmouseover="this.innerText='💔 별로에요 + 2'"
-                                        onmouseout="this.innerText='🤍 별로에요 + 2'">🤍 별로에요 + 2</span>
-                                </p>
-                            </button>
+                            <div class="card_btn_heart">
+                                <button class="like like4" onclick="like4_check()">
+                                    <span class="like4_text">
+                                        ❤️&nbsp좋아요 + 1 &nbsp
+                                    </span>
+                                </button>
+                                <button class="dislike dislike4" onclick="dislike4_check()">
+                                    <span class="dislike4_text">
+                                        🤍&nbsp별로에요 - 1 &nbsp
+                                    </span>
+                                </button>
+                            </div>
 
                             <!-- 댓글 내역 -->
                             <ul class="comment_List4">
@@ -222,10 +238,10 @@
                         <!-- 댓글 입력 -->
                         <div class="input-group">
                             <div class="input-group mb-3">
-                                <span class="input-group-text" id="basic-addon1">ID</span>
+                                <span class="input-group-text input_id" id="basic-addon1">ID</span>
                                 <input type="text" class="form-control comment_Input4" placeholder="댓글 달기..."
                                     aria-label="Username" aria-describedby="basic-addon1">
-                                <button class="btn btn-outline-secondary comment_Add4" type="button"
+                                <button class="comment_btn comment_Add4" type="button"
                                     id="inputGroupFileAddon04">게시</button>
                             </div>
                         </div>
@@ -242,14 +258,18 @@
                         <span class="five_src"></span>
                         <!-- like/dislike -->
                         <div class="card-body">
-                            <button class="card_btn_heart">
-                                <p><span onmouseover="this.innerText='❤️ 좋아요 + 1 &nbsp'"
-                                        onmouseout="this.innerText='🤍 좋아요 + 1 &nbsp'">🤍
-                                        좋아요 + 1 &nbsp</span>
-                                    <span onmouseover="this.innerText='💔 별로에요 + 2'"
-                                        onmouseout="this.innerText='🤍 별로에요 + 2'">🤍 별로에요 + 2</span>
-                                </p>
-                            </button>
+                            <div class="card_btn_heart">
+                                <button class="like like5" onclick="like5_check()">
+                                    <span class="like5_text">
+                                        ❤️&nbsp좋아요 + 1 &nbsp
+                                    </span>
+                                </button>
+                                <button class="dislike dislike5" onclick="dislike5_check()">
+                                    <span class="dislike5_text">
+                                        🤍&nbsp별로에요 - 1 &nbsp
+                                    </span>
+                                </button>
+                            </div>
 
                             <!-- 댓글 내역 -->
                             <ul class="comment_List5">
@@ -262,10 +282,10 @@
                         <!-- 댓글 입력 -->
                         <div class="input-group">
                             <div class="input-group mb-3">
-                                <span class="input-group-text" id="basic-addon1">ID</span>
+                                <span class="input-group-text input_id" id="basic-addon1">ID</span>
                                 <input type="text" class="form-control comment_Input5" placeholder="댓글 달기..."
                                     aria-label="Username" aria-describedby="basic-addon1">
-                                <button class="btn btn-outline-secondary comment_Add5" type="button"
+                                <button class="comment_btn comment_Add5" type="button"
                                     id="inputGroupFileAddon04">게시</button>
                             </div>
                         </div>
@@ -282,14 +302,18 @@
                         <span class="six_src"></span>
                         <!-- like/dislike -->
                         <div class="card-body">
-                            <button class="card_btn_heart">
-                                <p><span onmouseover="this.innerText='❤️ 좋아요 + 1 &nbsp'"
-                                        onmouseout="this.innerText='🤍 좋아요 + 1 &nbsp'">🤍
-                                        좋아요 + 1 &nbsp</span>
-                                    <span onmouseover="this.innerText='💔 별로에요 + 2'"
-                                        onmouseout="this.innerText='🤍 별로에요 + 2'">🤍 별로에요 + 2</span>
-                                </p>
-                            </button>
+                            <div class="card_btn_heart">
+                                <button class="like like6" onclick="like6_check()">
+                                    <span class="like6_text">
+                                        ❤️&nbsp좋아요 + 1 &nbsp
+                                    </span>
+                                </button>
+                                <button class="dislike dislike6" onclick="dislike6_check()">
+                                    <span class="dislike6_text">
+                                        🤍&nbsp별로에요 - 1 &nbsp
+                                    </span>
+                                </button>
+                            </div>
 
                             <!-- 댓글 내역 -->
                             <ul class="comment_List6">
@@ -302,10 +326,10 @@
                         <!-- 댓글 입력 -->
                         <div class="input-group">
                             <div class="input-group mb-3">
-                                <span class="input-group-text" id="basic-addon1">ID</span>
+                                <span class="input-group-text input_id" id="basic-addon1">ID</span>
                                 <input type="text" class="form-control comment_Input6" placeholder="댓글 달기..."
                                     aria-label="Username" aria-describedby="basic-addon1">
-                                <button class="btn btn-outline-secondary comment_Add6" type="button"
+                                <button class="comment_btn comment_Add6" type="button"
                                     id="inputGroupFileAddon04">게시</button>
                             </div>
                         </div>
@@ -323,14 +347,18 @@
 
                         <!-- like/dislike -->
                         <div class="card-body">
-                            <button class="card_btn_heart">
-                                <p><span onmouseover="this.innerText='❤️ 좋아요 + 1 &nbsp'"
-                                        onmouseout="this.innerText='🤍 좋아요 + 1 &nbsp'">🤍
-                                        좋아요 + 1 &nbsp</span>
-                                    <span onmouseover="this.innerText='💔 별로에요 + 2'"
-                                        onmouseout="this.innerText='🤍 별로에요 + 2'">🤍 별로에요 + 2</span>
-                                </p>
-                            </button>
+                            <div class="card_btn_heart">
+                                <button class="like like7" onclick="like7_check()">
+                                    <span class="like7_text">
+                                        ❤️&nbsp좋아요 + 1 &nbsp
+                                    </span>
+                                </button>
+                                <button class="dislike dislike7" onclick="dislike7_check()">
+                                    <span class="dislike7_text">
+                                        🤍&nbsp별로에요 - 1 &nbsp
+                                    </span>
+                                </button>
+                            </div>
 
                             <!-- 댓글 내역 -->
                             <ul class="comment_List7">
@@ -343,10 +371,10 @@
                         <!-- 댓글 입력 -->
                         <div class="input-group">
                             <div class="input-group mb-3">
-                                <span class="input-group-text" id="basic-addon1">ID</span>
+                                <span class="input-group-text input_id" id="basic-addon1">ID</span>
                                 <input type="text" class="form-control comment_Input7" placeholder="댓글 달기..."
                                     aria-label="Username" aria-describedby="basic-addon1">
-                                <button class="btn btn-outline-secondary comment_Add7" type="button"
+                                <button class="comment_btn comment_Add7" type="button"
                                     id="inputGroupFileAddon04">게시</button>
                             </div>
                         </div>
@@ -368,7 +396,9 @@
 
 </body>
 
-<script src="../static/js_Posts/test_Btn_Comment.js"></script>
-<script src="../static/Js_Posts/text_src_crawling.js"></script>
+<script src="../static/js_Posts/btn_Comment.js"></script>
+<script src="../static/Js_Posts/text_Src_crawling.js"></script>
+<script src="../static/Js_Posts/header_logo.js"></script>
+<script src="../static/js_Posts/like_dislike_check.js"></script>
 
 </html>

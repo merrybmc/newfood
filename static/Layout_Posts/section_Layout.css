@@ -10,3 +10,53 @@
   height: 450px;
   object-fit: cover;
 }
+
+.comment_btn {
+  width: 70px;
+  background-color: white;
+  color: black;
+  border: transparent;
+  font-family: "cr";
+}
+
+.comment_btn:hover {
+  width: 70px;
+  background-color: #1e4174;
+  color: #dce2f0;
+  border: transparent;
+}
+
+.comment_btn:active {
+  width: 70px;
+  background-color: #50586c;
+  color: #dce2f0;
+  border: transparent;
+}
+
+.input_id {
+  width: 100px;
+}
+
+.like {
+  margin-right: 10px;
+  border: 3px;
+  background-color: #00539c;
+  color: white;
+  width: 120px;
+  height: 30px;
+  font-size: 15px;
+  font-family: "cr";
+  border-radius: 10px;
+}
+
+.dislike {
+  margin-right: 10px;
+  border: 3px;
+  background-color: #a2a2a1;
+  color: white;
+  width: 120px;
+  height: 30px;
+  font-size: 15px;
+  font-family: "cr";
+  border-radius: 10px;
+}
